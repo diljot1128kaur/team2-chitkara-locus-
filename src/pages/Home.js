@@ -43,7 +43,15 @@ const Home = () => {
 					alt="code-sync-logo"
 				/>
 				<h4 className="mainLabel">Paste invitation ROOM ID</h4>
-				
+				<div className="inputGroup">
+					<input
+						type="text"
+						className="inputBox"
+						placeholder="ROOM ID"
+						onChange={e => setRoomId(e.target.value)}
+						value={roomId}
+						onKeyUp={handleInputEnter}
+					/>
 					<input
 						type="text"
 						className="inputBox"
